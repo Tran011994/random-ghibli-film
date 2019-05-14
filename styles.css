@@ -17,24 +17,32 @@ body {
 #main-container {
     display: flex;
     background: #393e46;
+    min-height: 100%;
+    align-items: center;
+    padding-bottom: 4rem;
+    border: 5px solid #222831;
 }
 
 .main-item {
     flex: 1 1 50%;
-    
+    padding: 2rem 0;
 }
 
 #header {
     width: 100%;
     text-align: center;
     height: 10vh;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 .ghibli-logo {
     height: 100%;
+    text-decoration: none;
 }
 
+.ghibli-logo:focus {
+    outline: 0;
+}
 /* Logo and film cover */
 
 .cover {
@@ -42,10 +50,21 @@ body {
     flex-direction: column;
     height: 100%;
     align-items: center;
+    justify-items: center;
 }
 
 .pic-item {
     width: 50%;
+}
+
+.film-cover {
+    margin: .5rem;
+    border: 5px solid #222831;
+}
+
+.music {
+    color: #eeeeee;
+    margin-top: .5rem;
 }
 
 /* Movie description section */
@@ -60,10 +79,42 @@ body {
 
 .film-item {
     width: 50%;
+    color: #eeeeee;
+}
+
+.title {
+    color: #00adb5;
+    font-family: Lobster, Arial, sans-serif;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.director, .producer, .release-date {
+    font-family: Cabin, Arial, sans-serif;
+    font-size: 1rem;
+    margin: .5rem;
+}
+
+.description {
+    font-family: Indie Flower, Arial, sans-serif;
+    font-size: 1rem;
 
 }
 
+/* footer */
 
+.footer {
+    text-align: center;
+    color: #eeeeee;
+    background: #222831;
+}
+
+.footer-text {
+    margin: 0;
+    padding: 1rem 0;
+    font-family: Cabin, Arial, sans-serif;
+    font-size: .8rem;
+}
 
 /* Simple transition */
 

@@ -6,11 +6,12 @@
         <title>Random Ghibli Film</title>
         <meta name="description" content="A simple page that display a random Ghibli film and some information on the film.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cabin|Indie+Flower|Lobster" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body class="animate-in">
         <section id="header">
-            <img class="ghibli-logo" src="images/ghibli-logo.png">
+            <input class="ghibli-logo" type="image" src="images/ghibli-logo.png" onclick="getFilm()">
         </section>
         
 
@@ -22,6 +23,7 @@
                     <p>If you are reading this, it is because your browser does not support the audio element.</p>
                 </audio> 
             </div>
+
             <div class="main-item film-information">
                 <div class="film-item film-title">
                     <h1 class="title"></h1>
@@ -38,12 +40,13 @@
                 <div class="film-item film-description">
                     <p class="description"></p>
                 </div>
-    
-                <div class="new-film">
-                    <input class="new-film-button" type="button" value="New Film!" onclick="getFilm()">
-                </div>
+                
             </div>
         </div>
+
+        <section class="footer">
+            <p class="footer-text">This is just small fan site. All content belongs to Studio Ghibli. Go watch their movies!</p>
+        </section>
         
         <script src="scripts.js" charset="utf-8"></script>
     </body>

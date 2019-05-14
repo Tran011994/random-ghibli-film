@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Random Ghibli Film</title>
+        <meta name="description" content="A simple page that display a random Ghibli film and some information on the film.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="animate-in">
+        <section id="header">
+            <img class="ghibli-logo" src="images/ghibli-logo.png">
+        </section>
+        
+
+        <div id="main-container">
+            
+            <div class="main-item cover">
+                <img class="film-cover pic-item" src="">
+                <audio class="music pic-item" type="audio/mp3" src="" controls autoplay loop>
+                    <p>If you are reading this, it is because your browser does not support the audio element.</p>
+                </audio> 
+            </div>
+            <div class="main-item film-information">
+                <div class="film-item film-title">
+                    <h1 class="title"></h1>
+                </div>
+                <div class="film-item film-director">
+                    <h3 class="director"></h3>
+                </div>
+                <div class="film-item film-producer">
+                    <h3 class="producer"></h3>
+                </div>
+                <div class="film-item film-release-date">
+                    <h4 class="release-date"></h4>
+                </div>
+                <div class="film-item film-description">
+                    <p class="description"></p>
+                </div>
+    
+                <div class="new-film">
+                    <input class="new-film-button" type="button" value="New Film!" onclick="getFilm()">
+                </div>
+            </div>
+        </div>
+        
+        <script src="scripts.js" charset="utf-8"></script>
+    </body>
+</html>

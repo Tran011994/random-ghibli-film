@@ -1,12 +1,14 @@
 html {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
 }
     
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -15,16 +17,22 @@ body {
 
 
 #main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background: #393e46;
     min-height: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-bottom: 4rem;
     border: 5px solid #222831;
 }
 
 .main-item {
-    flex: 1 1 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
     padding: 2rem 0;
 }
 
@@ -46,10 +54,17 @@ body {
 /* Logo and film cover */
 
 .cover {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     justify-items: center;
 }
 
@@ -71,10 +86,17 @@ body {
 
 .film-information {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .film-item {
@@ -124,6 +146,7 @@ body {
 }
 .animate-out {
     -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
     transition: opacity .5s;
     opacity: 0;
 }
@@ -140,10 +163,15 @@ body {
 
 @media all and (max-width: 1024px) {
     #main-container {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .main-item {
-        flex: 1 1 100%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
     }
 }
